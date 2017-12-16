@@ -4,36 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <title>My first blog post</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-    h1 > h6
-    <h1>My first blog post</h1>
-    <h2>This if my first blog post</h2>
-    <p>
-        <strong>Tag strong = bold</strong>
-        <em>Tag em = itálico</em>
-        Tag br = pula linha <br>
-        <u>Tag u = sublinhado</u>
-        http://randomuser.me = pegar perfis random
-    </p>
-    
-    <p>Atributo alt da tag img descreve a imagem caso ela n possa ser mostrada</p>    
-    <img src="htmlcss.jpg" alt="Logo photo">
-    
-    <p>Atributo target _blank da tag a = abre link em uma nova aba</p>
-    <a href="http://www.udemy.com" target="_blank">Link para o Udemy</a>
-    <a href="htmlcss.jpg" target="_blank">Link para o logo HTML</a>
+    <div class="container">
+        <div class="blog-post">
+            <h1>My first blog post</h1>
+            <h2>This if my first blog post</h2>
+            <p class="date">March 11th, 2015</p>
+            <div>
+                <p><strong>Tag strong = bold</strong></p>
+                <p><em>Tag em = itálico</em></p>
+                <p>Tag br = pula linha <br></p>
+                <p><u>Tag u = sublinhado</u></p>
+                <p>http://randomuser.me = pegar perfis random</p>
+                <p>h1 > h6</p>
+            </div>
 
-    <h2>HTML is amazing</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi molestias corporis aut adipisci et dicta iste sed tempora, voluptatem beatae aspernatur quae blanditiis, quidem ullam omnis perspiciatis veniam! Illo ratione rerum, quis, eius, veniam iste officiis asperiores numquam possimus, magni architecto! Qui dolor tenetur, accusamus fugiat facilis quo. Corporis molestiae pariatur obcaecati nihil maxime a dolorem fugit optio sunt nulla aperiam similique reprehenderit eligendi unde, nesciunt quisquam officiis voluptatum, praesentium vero dolorum! Esse modi, sequi voluptate, quisquam praesentium corporis quo illum aliquid iusto ducimus similique architecto illo harum officiis placeat accusamus qui rem, quasi eligendi, ipsa maiores optio. Suscipit, alias?
-    </p>
-    
-    <img src="author.jpg" alt="Author photo">
-    
-    <p>Author Eduardo Diniz</p>
+            <p class="main-text">Atributo alt da tag img descreve a imagem caso ela n possa ser mostrada</p>
+
+            <p class="main-text">Atributo target _blank da tag a = abre link em uma nova aba</p>
+            <a href="http://www.udemy.com" target="_blank">Link para o Udemy</a>
+            <a href="htmlcss.jpg" target="_blank">Link para o logo HTML</a>
+
+            <h2>HTML is amazing</h2>
+            <p class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi molestias corporis aut adipisci et dicta iste sed tempora, voluptatem beatae aspernatur quae blanditiis, quidem ullam omnis perspiciatis veniam! Illo ratione rerum, quis, eius, veniam iste officiis asperiores numquam possimus, magni architecto! Qui dolor tenetur, accusamus fugiat facilis quo. Corporis molestiae pariatur obcaecati nihil maxime a dolorem fugit optio sunt nulla aperiam similique reprehenderit eligendi unde, nesciunt quisquam officiis voluptatum, praesentium vero dolorum! Esse modi, sequi voluptate, quisquam praesentium corporis quo illum aliquid iusto ducimus similique architecto illo harum officiis placeat accusamus qui rem, quasi eligendi, ipsa maiores optio. Suscipit, alias?
+            </p>
+
+            <img src="htmlcss.jpg" alt="Logo photo">
+
+        </div>
+
+        <div class="other-posts">
+            <div class="other">
+                The first blog post
+            </div>
+            <div class="other">
+                Yet another blog post
+            </div>
+            <div class="other">
+                The third blog post
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="author-box">
+            <img src="author.jpg" alt="Author photo">
+            <p class="author-text">Author: Eduardo Diniz</p>
+        </div>
+
+    </div>
 
 </body>
 
