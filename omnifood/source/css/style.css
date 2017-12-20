@@ -1,3 +1,16 @@
+/*---------------------------------------------------------------*
+
+Color orange light = #E67E22
+Color orange dark = #CF6D17
+
+/*---------------------------------------------------------------*/
+
+/*---------------------------------------------------------------*/
+
+/* BASIC SETUP */
+
+/*---------------------------------------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +23,144 @@ html {
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
     font-weight: 300;
-    <!--font render in a perfect way-->
+    /*font render in a perfect way*/
     text-rendering: optimizeLegibility;
+}
+
+/*---------------------------------------------------------------*/
+
+/* HEADER */
+
+/*---------------------------------------------------------------*/
+
+header {
+    /*gradiente vai do preto com 70% de transparência ao mesmo preto com 70% de transparência
+    escurecendo a imagem de fundo, localizada na pasta img*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    /*ver a imagem inteira*/
+    background-size: cover;
+    /*centraliza a imagem*/
+    background-position: center;
+    /*100% do viewport height*/
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    /*pega metade da largura do elemento e metade da altura
+    usa esses 2 tamanhos e empurra essa top e left = centraliza*/
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #E67E22;
+}
+
+/*---------------------------------------------------------------*/
+
+/* REUSABLE COMPONENTS */
+
+/*---------------------------------------------------------------*/
+
+.row {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------------------*/
+
+/* HEADINGS */
+
+/*---------------------------------------------------------------*/
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #FFF;
+    /*sempre que aumentar a fonte deve-se diminuir o font-weigth*/
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/*---------------------------------------------------------------*/
+
+/* BUTTONS */
+
+/*---------------------------------------------------------------*/
+
+.btn:link,
+.btn:visited {
+    /*inline-block é um elemento inline (tag a por ex) porém com padding e margin*/
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #E67E22;
+    border: 1px solid #E67E22;
+    color: #FFF;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #E67E22;
+    color: #E67E22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #CF6D17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #CF6D17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #CF6D17;
+    color: #FFF;
 }
