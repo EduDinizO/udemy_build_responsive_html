@@ -163,7 +163,7 @@ h3 {
 .long-copy {
     line-height: 145%;
     width: 70%;
-    margin: 0 15%;
+    margin: 0 15% 30px 15%;
     text-align: justify;
 }
 
@@ -231,4 +231,51 @@ h3 {
 .btn-ghost:active {
     border: 1px solid #CF6D17;
     color: #FFF;
+}
+
+/*---------------------------------------------------------------*/
+
+/* MEALS */
+
+/*---------------------------------------------------------------*/
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    /*trocar o fundo para a opcadidade parecer escura*/
+    background-color: #000;
+    /*como a img foi aumentada em 15% com o scale ela sobre sai do conteinar dela q é essa classe*/
+    /*esconde a parte da imagem que sobre sai*/
+    overflow: hidden;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    /*fundo default = branco, então a opacidade parece que deixa mais claro*/
+    opacity: 0.7;
+    /*aumenta o tamanho da imagem em 15% */
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    /*se deixar scale 1 aparece uma linha em branco embaixo*/
+    transform: scale(1.03);
+    opacity: 1;
 }
