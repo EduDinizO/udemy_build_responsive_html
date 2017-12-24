@@ -17,7 +17,8 @@ Color orange dark = #CF6D17
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
@@ -25,6 +26,8 @@ html {
     font-weight: 300;
     /*font render in a perfect way*/
     text-rendering: optimizeLegibility;
+    /*no mobile não deixa ter scroll horizontal*/
+    overflow-x: hidden;
 }
 
 .clearfix {
