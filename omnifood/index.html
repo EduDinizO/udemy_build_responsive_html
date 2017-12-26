@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="source/css/style.css">
     <link rel="stylesheet" type="text/css" href="source/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
@@ -26,16 +27,17 @@
                 <img class="logo-black" src="source/css/img/logo.png" alt="Omnifood logo">
                 <ul class="main-nav">
                     <li>
-                        <a href="#">Food delivery</a>
+                        <!--ANCHOR = # + nome do id-->
+                        <a href="#features">Food delivery</a>
                     </li>
                     <li>
-                        <a href="#">How it works</a>
+                        <a href="#works">How it works</a>
                     </li>
                     <li>
-                        <a href="#">Our cities</a>
+                        <a href="#cities">Our cities</a>
                     </li>
                     <li>
-                        <a href="#">Sign up</a>
+                        <a href="#plans">Sign up</a>
                     </li>
                 </ul>
             </div>
@@ -43,13 +45,13 @@
 
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I'm hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
 
     <!-----------------------------SECTION FEATURES-------------------------------->
-    <section class="section-features js--section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food.</h2>
             <p class="long-copy">
@@ -57,7 +59,7 @@
             </p>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="ion-ios-infinite-outline icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -140,13 +142,13 @@
     </section>
 
     <!-----------------------------SECTION STEPS-------------------------------->
-    <section class="section-steps">
+    <section class="section-steps" id="works">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img class="app-screen" src="source/css/img/mobile/app-iPhone.png" alt="Omnifood app on iphone">
+                <img class="app-screen js--wp-2" src="source/css/img/mobile/app-iPhone.png" alt="Omnifood app on iphone">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -168,11 +170,11 @@
     </section>
 
     <!-----------------------------SECTION CITIES-------------------------------->
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="source/css/img/lisbon-3.jpg" alt="Lisbon">
                 <h3>Lisbon</h3>
@@ -260,13 +262,13 @@
     </section>
 
     <!-----------------------------SECTION PLANS-------------------------------->
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">399$ <span>per month</span></p>
